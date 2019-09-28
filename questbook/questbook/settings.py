@@ -132,6 +132,8 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder'
 ]
 
+AUTH_USER_MODEL = 'core.VkUser'
+
 try:
     from .local_settings import *
 except ImportError:
